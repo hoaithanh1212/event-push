@@ -1,0 +1,10 @@
+# app_identifier("[[APP_IDENTIFIER]]") # The bundle identifier of your app
+# apple_id("[[APPLE_ID]]") # Your Apple email address
+
+app_identifier "min.minmed.compass" # The bundle identifier of your app
+apple_id "honghp95@gmail.com" # Your Apple email address
+itunes_connect_id "honghp95@gmail.com"
+team_id "3VSQ2JPCTH" # Developer Portal Team ID
+itc_team_name "Minmed Group Pte Ltd"
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile

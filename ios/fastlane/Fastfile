@@ -1,0 +1,34 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Submit a new Beta Build to Apple TestFlight"
+  desc "This will also make sure the profile is up to date"
+  lane :beta do
+    # match(type: "appstore") # more information: https://codesigning.guide
+    gym(workspace: "Compass.xcworkspace",
+        scheme: "Compass",
+        export_method: "app-store") # Build your app - more options available
+    pilot(
+      skip_waiting_for_build_processing: true,
+      username: "honghp95@gmail.com"
+    )
+
+    # sh "your_script.sh"
+    # You can also use other beta testing services here (run `fastlane actions`)
+  end
+end

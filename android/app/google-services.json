@@ -1,0 +1,70 @@
+{
+  "project_info": {
+    "project_number": "702667988118",
+    "firebase_url": "https://compass-81e7a.firebaseio.com",
+    "project_id": "compass-81e7a",
+    "storage_bucket": "compass-81e7a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702667988118:android:ad2a29358e9f92bd",
+        "android_client_info": {
+          "package_name": "min.minmed.compass"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702667988118-lum2krfe7k5mbl9qp4nnnp9hl0pjcm32.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "min.minmed.compass",
+            "certificate_hash": "86246682342a928f8954258fd2ad6435713b39fd"
+          }
+        },
+        {
+          "client_id": "702667988118-9ectotluia6smhb0dndeok3t015nf92v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "min.minmed.compass",
+            "certificate_hash": "db5bfb9981f934e16f769f5533efa0727ab9188e"
+          }
+        },
+        {
+          "client_id": "702667988118-1sjc8gavovisumadoff423ivpfclanr8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5Od0Biv6KdQ-RCLCUH7f0jZRqG9KoCf8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "702667988118-1sjc8gavovisumadoff423ivpfclanr8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "702667988118-2qq352dda9sisarqrqdt93u6an017nch.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "min.minmed.compass"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

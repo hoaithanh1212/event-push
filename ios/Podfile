@@ -1,0 +1,58 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Compass' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  pod 'React', :path => '../node_modules/react-native', :subspecs => [
+  'Core',
+  'CxxBridge',
+  'DevSupport',
+  'RCTActionSheet',
+  'RCTAnimation',
+  'RCTBlob',
+  'RCTCameraRoll',
+  'RCTImage',
+  'RCTNetwork',
+  'RCTPushNotification',
+  'RCTSettings',
+  'RCTText',
+  'RCTVibration',
+  'RCTWebSocket',
+  'RCTLinkingIOS',
+  'RCTGeolocation'
+  ]
+  pod 'IQKeyboardManager'
+  pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+  pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
+  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+  # use_frameworks!
+  pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
+
+  pod 'GoogleSignIn'
+  # Pods for Compass
+  pod 'RNDeviceInfo', :path => '../node_modules/react-native-device-info'
+
+  #pod 'RNImageCropPicker', :path => '../node_modules/react-native-image-crop-picker'
+
+  #pod 'react-native-image-resizer', :path => '../node_modules/react-native-image-resizer'
+  pod 'SwiftyJSON', '4.0.0'
+  pod 'Charts', '3.2.2'
+end
+swift4 = ['Charts']
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    if target.name == "React"
+      target.remove_from_project
+    end
+    if target.name == "yoga"
+      target.remove_from_project
+    end
+    target.build_configurations.each do |config|
+      if swift4.include?(target.name)
+        config.build_settings['SWIFT_VERSION'] = '4.2'
+      end
+    end
+  end
+end

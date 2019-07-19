@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Compass</string>
+    <string name="facebook_app_id">282683955744462</string>
+    <string name="fb_login_protocol_scheme">fb282683955744462</string>
+</resources>
