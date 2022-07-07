@@ -10,7 +10,7 @@
     "@babel/runtime": "^7.4.3",
     "@remobile/react-native-toast": "^1.0.7",
     "lodash.get": "^4.4.2",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "query-string": "^6.2.0",
     "react": "16.8.3",
     "react-native": "^0.59.5",
