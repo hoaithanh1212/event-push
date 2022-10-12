@@ -19,7 +19,7 @@
     "react-native-calendars": "^1.32.0",
     "react-native-charts-wrapper": "^0.5.2",
     "react-native-device-info": "^0.26.4",
-    "react-native-fbsdk": "^0.8.0",
+    "react-native-fbsdk": "^3.0.0",
     "react-native-gesture-handler": "^1.0.12",
     "react-native-google-signin": "^1.0.2",
     "react-native-image-base64": "^0.1.3",
